@@ -6,9 +6,12 @@ import Game from './components/game'
 import Navbar from './components/Navbar'
 import MusicSelection from './components/MusicSelection'
 
+<<<<<<< HEAD
 =======
 import MusicSelection from './components/MusicSelection'
 >>>>>>> cc72757 (added components)
+=======
+>>>>>>> 6bb11d8 (updated button color)
 
 function App() {
   //const [count, setCount] = useState(0)

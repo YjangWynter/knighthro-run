@@ -38,6 +38,7 @@ const StyledMenu = styled((props) => (
     minWidth: 180,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     backgroundColor: '#fff',
 =======
     color:
@@ -46,6 +47,9 @@ const StyledMenu = styled((props) => (
 =======
     backgroundColor: '#374151',
 >>>>>>> e3353c7 (changed background color for music selection)
+=======
+    backgroundColor: '#fff',
+>>>>>>> 6bb11d8 (updated button color)
     boxShadow:
       'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
     '& .MuiMenu-list': {
