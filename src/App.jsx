@@ -2,7 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Game from './components/game'
+=======
+>>>>>>> 5346a95 (added navbar to code)
 import Navbar from './components/Navbar'
 import MusicSelection from './components/MusicSelection'
 
@@ -18,7 +21,10 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <Game></Game>
+=======
+>>>>>>> 5346a95 (added navbar to code)
       <Navbar/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
