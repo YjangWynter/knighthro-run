@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400&family=Press+Start+2P&display=swap');;
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -14,14 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 500;                                           
+  color: #FFC904;
   text-decoration: inherit;
-}
+}                                                                   
 a:hover {
-  color: #535bf2;
+  color: #917404;
 }
 
 body {
@@ -38,6 +38,7 @@ h1 {
 }
 
 button {
+  font-family: 'Press Start 2P', cursive;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
