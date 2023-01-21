@@ -12,6 +12,7 @@ const MusicSelection = () => {
     <Card
     variant="outlined"
     sx={{
+      backgroundColor:'#374151',
       p: 1,
       display: 'flex',
       flexDirection: { xs: 'column', sm: 'row' },
@@ -29,7 +30,7 @@ const MusicSelection = () => {
       }}
     />
     <Box sx={{ alignSelf: 'center', px: { xs: 0, sm: 2 } }}>
-      <GenreSelection sx={{ alignSelf:'center', position:'Top'}}/>
+      <GenreSelection sx={{  alignSelf:'center', position:'Top'}}/>
       <Typography
         variant="body1"
         color="text.primary"
