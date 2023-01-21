@@ -6,29 +6,27 @@ import MusicSelection from './components/MusicSelection'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [playGame, setPlayGame] = useState(false)
+  const toggleGame = () => {
+    setPlayGame(!playGame);
+  }
 
   return (
-    <div className="App">
-      <Navbar/>
+    <div className="App">    
+     <Navbar/>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
         <MusicSelection />
       </div>
-      <h1>Vite + React</h1>
+      <h2>Choose your music genre</h2>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={playGame}>
+          Start game 
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        {playGame && (
+          //Game code <Game/>
+          <p>Game</p>
+        )}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }

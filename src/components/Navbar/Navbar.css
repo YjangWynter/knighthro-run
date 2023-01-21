@@ -10,11 +10,20 @@ ul {
     margin-right: auto;
     align-items: stretch;
     justify-content: space-around;
+    list-style: none; 
 
 }
 li {
     margin: 1vw;
-    justify-content: space-around;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none; 
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
 }
 .title {
     color: #FFC904;
