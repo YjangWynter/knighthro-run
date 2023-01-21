@@ -6,6 +6,8 @@ import MenuItem from '@mui/material/MenuItem';
 import EditIcon from '@mui/icons-material/Edit';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import TrackOne from '../assets/music/Alex-Productions - Electro cyberpunk _ Fight.mp3';
+import TrackTwo from '../assets/music/Alex-Productions - Electro Trap _ Bang.mp3';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -49,12 +51,18 @@ const StyledMenu = styled((props) => (
 
 export default function GenreSelection() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [track, setTrack] = React.useState(TrackOne);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const handleTrack = (e) => {
+    setTrack(e);
+    handleClose()
+    console.log(this.state.track)
   };
 
   return (
@@ -80,11 +88,11 @@ export default function GenreSelection() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <MenuItem onClick={ handleTrack} disableRipple>
           <EditIcon />
           Track 1
         </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        <MenuItem onClick={handleTrack} disableRipple>
           <FileCopyIcon />
           Track 2
         </MenuItem>
