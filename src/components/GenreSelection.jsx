@@ -6,6 +6,11 @@ import MenuItem from '@mui/material/MenuItem';
 import EditIcon from '@mui/icons-material/Edit';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import TrackOne from '../assets/music/Alex-Productions - Electro cyberpunk _ Fight.mp3';
+import TrackTwo from '../assets/music/Alex-Productions - Electro Trap _ Bang.mp3';
+
+import { createMachine } from 'xstate';
+import { useMachine } from '@xstate/react';
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -46,15 +51,44 @@ const StyledMenu = styled((props) => (
     },
   },
 }));
+const clickMachine = createMachine({
+  id: "GenreSelection",
+  initial: "track",
+  states: {
+    track: {
+      on: {
+        "Click Track1": {
+          target: "Track 1",
+        },
+        "click Track2": {
+          target: "Track 2",
+        },
+      },
+    },
+    "Track 1": {},
+    "Track 2": {},
+  },
+  context: {},
+  predictableActionArguments: true,
+  preserveActionOrder: true,
+});
+
 
 export default function GenreSelection() {
+  const [state, send] = useMachine(clickMachine);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [track, setTrack] = React.useState('');
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const handleTrack = (value) => {
+    setTrack(value);
+    handleClose()
+    console.log(track)
   };
 
   return (
@@ -77,14 +111,15 @@ export default function GenreSelection() {
           'aria-labelledby': 'demo-customized-button',
         }}
         anchorEl={anchorEl}
+        track ={track}
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} disableRipple>
+        <MenuItem onClick={() => send('Track 1')} value='track 1' disableRipple>
           <EditIcon />
           Track 1
         </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
+        <MenuItem onClick={handleTrack} value='track 2' disableRipple>
           <FileCopyIcon />
           Track 2
         </MenuItem>

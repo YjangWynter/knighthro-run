@@ -10,12 +10,33 @@ ul {
     margin-right: auto;
     align-items: stretch;
     justify-content: space-around;
+    list-style: none; 
 
 }
 li {
     margin: 1vw;
     justify-content: space-around;
+    list-style: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none; 
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
 }
+
 .title {
     color: #FFC904;
 }
+
+.sign-in-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 2px;
+  }
