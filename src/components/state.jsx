@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./state.css";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { createMachine, assign } from "xstate";
@@ -26,19 +26,18 @@ const toggleMachine = createMachine({
     const active = state.matches("active");
     const { count } = state.context;
   
-    return (
-      <div className="State">
-        <h1>XState React Template</h1>
-        <h2>Fork this template!</h2>
-        <button onClick={() => send("TOGGLE")}>
-          Click me ({active ? "✅" : "❌"})
-        </button>{" "}
-        <code>
-          Toggled <strong>{count}</strong> times
-        </code>
-      </div>
-    );
+    // return (
+    //   <div className="State">
+    //     <h1>XState React Template</h1>
+    //     <h2>Fork this template!</h2>
+    //     <button onClick={() => send("TOGGLE")}>
+    //       Click me ({active ? "✅" : "❌"})
+    //     </button>{" "}
+    //     <code>
+    //       Toggled <strong>{count}</strong> times
+    //     </code>
+    //   </div>
+    // );
   }
-  
-  const rootElement = document.getElementById("root");
-  ReactDOM.render(<State />, rootElement);
+
+export default State
