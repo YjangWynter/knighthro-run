@@ -1,10 +1,14 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+<<<<<<< HEAD
 import Game from './components/game'
 import Navbar from './components/Navbar'
 import MusicSelection from './components/MusicSelection'
 
+=======
+import MusicSelection from './components/MusicSelection'
+>>>>>>> cc72757 (added components)
 
 function App() {
   //const [count, setCount] = useState(0)
