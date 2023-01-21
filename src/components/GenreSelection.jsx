@@ -95,6 +95,7 @@ export default function GenreSelection() {
         <MenuItem onClick={handleClose} disableRipple>
           <EditIcon />
 <<<<<<< HEAD
+<<<<<<< HEAD
           Track 1
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
@@ -116,6 +117,13 @@ export default function GenreSelection() {
           <MoreHorizIcon />
           More
 >>>>>>> cc72757 (added components)
+=======
+          Track 1
+        </MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <FileCopyIcon />
+          Track 2
+>>>>>>> 2db75b0 (Update GenreSelection.jsx)
         </MenuItem>
       </StyledMenu>
     </div>
