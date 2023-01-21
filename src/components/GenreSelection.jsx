@@ -86,20 +86,11 @@ export default function GenreSelection() {
       >
         <MenuItem onClick={handleClose} disableRipple>
           <EditIcon />
-          Edit
+          Track 1
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <FileCopyIcon />
-          Duplicate
-        </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
-        <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
-          Archive
-        </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          More
+          Track 2
         </MenuItem>
       </StyledMenu>
     </div>
