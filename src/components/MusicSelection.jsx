@@ -12,7 +12,7 @@ const MusicSelection = () => {
     <Card
     variant="outlined"
     sx={{
-      backgroundColor:'#000000',
+      backgroundColor: 'transparent',
       p: 1,
       display: 'flex',
       flexDirection: { xs: 'column', sm: 'row' },
@@ -29,8 +29,8 @@ const MusicSelection = () => {
         width: 'clamp(124px, (304px - 100%) * 999 , 100%)',
       }}
     />
-    <Box sx={{ alignSelf: 'center', px: { xs: 0, sm: 2 } }}>
-      <GenreSelection sx={{ alignSelf:'center', position:'Top'}}/>
+    <Box sx={{ alignSelf: 'center', px: { xs: 0, sm: 2 },  }}>
+      <GenreSelection sx={{ alignSelf:'center', position:'Top', color:'#FFCC00',}}/>
       <Typography
         variant="body1"
         color="#ffffff"
@@ -56,15 +56,16 @@ const MusicSelection = () => {
         spacing={1}
         sx={{
           mt: 2,
+          color:'#FFCC00',
           justifyContent: { xs: 'space-between', sm: 'flex-start' },
         }}
       >
-        <IconButton aria-label="fast rewind" sx={{color:'#ffe600'}}>
+        <IconButton aria-label="fast rewind" sx={{color:'#FFCC00'}}>
           <FastRewindRounded />
         </IconButton>
         <IconButton
           aria-label={paused ? 'play' : 'pause'}
-          sx={{ mx: 1, color:'#ffe600' }}
+          sx={{ mx: 1, color:'#FFCC00' }}
           onClick={() => setPaused((val) => !val)}
         >
           {paused ? <PlayArrowRounded /> : <PauseRounded />}
