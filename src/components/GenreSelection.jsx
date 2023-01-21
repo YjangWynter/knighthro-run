@@ -5,6 +5,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import EditIcon from '@mui/icons-material/Edit';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 =======
 import Divider from '@mui/material/Divider';
@@ -12,6 +13,9 @@ import ArchiveIcon from '@mui/icons-material/Archive';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 >>>>>>> cc72757 (added components)
+=======
+import FileCopyIcon from '@mui/icons-material/FileCopy';
+>>>>>>> e3353c7 (changed background color for music selection)
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const StyledMenu = styled((props) => (
@@ -33,11 +37,15 @@ const StyledMenu = styled((props) => (
     marginTop: theme.spacing(1),
     minWidth: 180,
 <<<<<<< HEAD
+<<<<<<< HEAD
     backgroundColor: '#fff',
 =======
     color:
       theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
 >>>>>>> cc72757 (added components)
+=======
+    backgroundColor: '#374151',
+>>>>>>> e3353c7 (changed background color for music selection)
     boxShadow:
       'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
     '& .MuiMenu-list': {

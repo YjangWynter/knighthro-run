@@ -13,9 +13,13 @@ const MusicSelection = () => {
     variant="outlined"
     sx={{
 <<<<<<< HEAD
+<<<<<<< HEAD
       backgroundColor:'#000000',
 =======
 >>>>>>> cc72757 (added components)
+=======
+      backgroundColor:'#374151',
+>>>>>>> e3353c7 (changed background color for music selection)
       p: 1,
       display: 'flex',
       flexDirection: { xs: 'column', sm: 'row' },
@@ -33,7 +37,7 @@ const MusicSelection = () => {
       }}
     />
     <Box sx={{ alignSelf: 'center', px: { xs: 0, sm: 2 } }}>
-      <GenreSelection sx={{ alignSelf:'center', position:'Top'}}/>
+      <GenreSelection sx={{  alignSelf:'center', position:'Top'}}/>
       <Typography
         variant="body1"
 <<<<<<< HEAD
