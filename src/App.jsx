@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import MusicSelection from './components/MusicSelection'
-
+import ChromeDinoGame from 'react-chrome-dino';
 
 function App() {
   const [playGame, setPlayGame] = useState(false)
@@ -16,6 +16,7 @@ function App() {
      <Navbar/>
       <div>
         <MusicSelection />
+        <ChromeDinoGame />
       </div>
       <h2>Choose your music genre</h2>
       <div className="card">

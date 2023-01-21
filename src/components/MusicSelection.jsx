@@ -40,7 +40,7 @@ const MusicSelection = () => {
           mt: { xs: 1.5, sm: 0 },
         }}
       >
-        Ultraviolet
+        Electro cyberpunk
       </Typography>
       <Typography
         component="div"
@@ -49,7 +49,7 @@ const MusicSelection = () => {
         fontWeight={500}
         sx={{ textAlign: { xm: 'center', sm: 'start' } }}
       >
-        Basement • Beside Myself
+        
       </Typography>
       <Stack
         direction="row"
