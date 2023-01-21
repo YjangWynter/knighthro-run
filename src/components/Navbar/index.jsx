@@ -1,4 +1,3 @@
-import logo from '../../assets/logo.png'
 import './Navbar.css'
 function Navbar(){
 		return (

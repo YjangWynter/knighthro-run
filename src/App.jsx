@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Game from './components/game'
+import Navbar from './components/Navbar'
 import MusicSelection from './components/MusicSelection'
 
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <Game></Game>
+      <Navbar/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
